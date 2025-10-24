@@ -1,0 +1,17 @@
+CREATE DATABASE doce;
+USE doce;
+CREATE TABLE doce (
+	id_doce INT PRIMARY KEY AUTO_INCREMENT,
+    doce_nome VARCHAR(150),
+    doce_descricao TEXT,
+    doce_valor DECIMAL(10, 2),
+    doce_imagem VARCHAR(150)
+
+);
+
+SELECT * FROM doce;
+INSERT INTO doce (doce_nome, doce_descricao, doce_valor) VALUES 
+('Tubes morango', 'Azedinho, irresistíveis e cumpridinhos, possuem formato de tubo.', 10),
+('Dentaduras','Com formato divertido de dentadura e um delicioso sabor de morango e framboesa, nas cores rosa e branca, elas são a essência da diversão.',55);
+
+
